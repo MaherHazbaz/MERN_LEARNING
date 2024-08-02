@@ -49,6 +49,7 @@ const Index = () => {
             <button>Home</button>
           </Link>
         </div>
+        
         <div className=" flex space-x-15">
           <div>
             <Link

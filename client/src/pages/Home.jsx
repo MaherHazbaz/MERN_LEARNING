@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
+import CustomInput from "../components/CustomInput";
 const Home = () => {
   const [res, setres] = useState([]);
   const base_url = "https://dummyjson.com/products";
   const [search, setsearch] = useState("");
-
-  
+  console.log(base_url);
 
   return (
     <>
@@ -48,15 +47,14 @@ const Home = () => {
           </div>
         </nav>
         <br />
-        <div>
+        <div className="px-4 py-4">
           <input
-            type="text"
+            type={Text}
             value={search}
             onChange={(e) => setsearch(e.target.value)}
           />
         </div>
       </div>
-      
     </>
   );
 };

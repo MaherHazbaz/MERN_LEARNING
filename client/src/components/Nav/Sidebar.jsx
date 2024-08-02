@@ -28,14 +28,17 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className=" text-gray-50 bg-gray-700 h-screen w-50 p-4 ">
-      {nav.map((data) => (
-        <div className=" font-semibold flex items-center space-x-2 space-y-1 p-2 mx-2 hover:bg-slate-700 rounded-md ">
-          <Link to={data.path}>{data.name}</Link>
-          {data.icons}
-        </div>
-      ))}
-    </div>
+    <>
+      <div className=" text-gray-50 bg-gray-700 h-screen w-50 p-4 ">
+        {nav.map((data) => (
+          <div className=" font-semibold flex items-center space-x-2 space-y-1 p-2 mx-2 hover:bg-slate-700 rounded-md ">
+            <Link to={data.path}>{data.name}</Link>
+            {data.icons}
+          </div>
+        ))}
+      </div>
+      <div></div>
+    </>
   );
 };
 

@@ -19,6 +19,9 @@ const Index = () => {
           </Route>
         </Routes>
       </div>
+      <div>
+      
+      </div>
       
       <div>
 
